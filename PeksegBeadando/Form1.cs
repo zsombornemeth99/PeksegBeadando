@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace PeksegBeadando
 {
-    public partial class Form1 : Form
+    public partial class PeksegForm : Form
     {
-        public Form1()
+        public PeksegForm()
         {
             InitializeComponent();
         }

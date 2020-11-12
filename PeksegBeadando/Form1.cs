@@ -14,7 +14,7 @@ namespace PeksegBeadando
     {
         public PeksegForm()
         {
-            InitializeComponent();
+            InitializeComponent();         
         }
     }
 }

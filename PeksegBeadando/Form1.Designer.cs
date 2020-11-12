@@ -120,19 +120,26 @@
             // txtBx_ar
             // 
             resources.ApplyResources(this.txtBx_ar, "txtBx_ar");
+            this.txtBx_ar.ForeColor = System.Drawing.Color.Gray;
             this.txtBx_ar.Name = "txtBx_ar";
+            this.txtBx_ar.Enter += new System.EventHandler(this.txtBx_ar_Enter);
+            this.txtBx_ar.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtBx_ar_KeyPress);
+            this.txtBx_ar.Leave += new System.EventHandler(this.txtBx_ar_Leave);
             // 
             // lstBx_pekaru
             // 
             resources.ApplyResources(this.lstBx_pekaru, "lstBx_pekaru");
             this.lstBx_pekaru.FormattingEnabled = true;
             this.lstBx_pekaru.Name = "lstBx_pekaru";
+            this.lstBx_pekaru.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_pekaru_MouseClick);
+            this.lstBx_pekaru.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_pekaru_MouseDoubleClick);
             // 
             // bttn_hozzaadasPekaru
             // 
             resources.ApplyResources(this.bttn_hozzaadasPekaru, "bttn_hozzaadasPekaru");
             this.bttn_hozzaadasPekaru.Name = "bttn_hozzaadasPekaru";
             this.bttn_hozzaadasPekaru.UseVisualStyleBackColor = true;
+            this.bttn_hozzaadasPekaru.Click += new System.EventHandler(this.bttn_hozzaadasPekaru_Click);
             // 
             // chckBx_laktoz
             // 
@@ -143,7 +150,10 @@
             // txtBx_nev
             // 
             resources.ApplyResources(this.txtBx_nev, "txtBx_nev");
+            this.txtBx_nev.ForeColor = System.Drawing.Color.Gray;
             this.txtBx_nev.Name = "txtBx_nev";
+            this.txtBx_nev.Enter += new System.EventHandler(this.txtBx_nev_Enter);
+            this.txtBx_nev.Leave += new System.EventHandler(this.txtBx_nev_Leave);
             // 
             // tabPage2
             // 

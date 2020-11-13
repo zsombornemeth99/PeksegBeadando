@@ -36,7 +36,7 @@
             this.lstBx_peksegek = new System.Windows.Forms.ListBox();
             this.bttn_plusz = new System.Windows.Forms.Button();
             this.bttn_hozzaadasPekseg = new System.Windows.Forms.Button();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtBx_pekseg = new System.Windows.Forms.TextBox();
             this.grpBx_Pekaru = new System.Windows.Forms.GroupBox();
             this.txtBx_ar = new System.Windows.Forms.TextBox();
             this.lstBx_pekaru = new System.Windows.Forms.ListBox();
@@ -73,7 +73,7 @@
             this.grpBx_peksegek.Controls.Add(this.lstBx_peksegek);
             this.grpBx_peksegek.Controls.Add(this.bttn_plusz);
             this.grpBx_peksegek.Controls.Add(this.bttn_hozzaadasPekseg);
-            this.grpBx_peksegek.Controls.Add(this.textBox4);
+            this.grpBx_peksegek.Controls.Add(this.txtBx_pekseg);
             this.grpBx_peksegek.Name = "grpBx_peksegek";
             this.grpBx_peksegek.TabStop = false;
             // 
@@ -88,23 +88,31 @@
             resources.ApplyResources(this.lstBx_peksegek, "lstBx_peksegek");
             this.lstBx_peksegek.FormattingEnabled = true;
             this.lstBx_peksegek.Name = "lstBx_peksegek";
+            this.lstBx_peksegek.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
+            this.lstBx_peksegek.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_peksegek_MouseClick);
+            this.lstBx_peksegek.SelectedIndexChanged += new System.EventHandler(this.lstBx_peksegek_SelectedIndexChanged);
             // 
             // bttn_plusz
             // 
             resources.ApplyResources(this.bttn_plusz, "bttn_plusz");
             this.bttn_plusz.Name = "bttn_plusz";
             this.bttn_plusz.UseVisualStyleBackColor = true;
+            this.bttn_plusz.Click += new System.EventHandler(this.bttn_plusz_Click);
             // 
             // bttn_hozzaadasPekseg
             // 
             resources.ApplyResources(this.bttn_hozzaadasPekseg, "bttn_hozzaadasPekseg");
             this.bttn_hozzaadasPekseg.Name = "bttn_hozzaadasPekseg";
             this.bttn_hozzaadasPekseg.UseVisualStyleBackColor = true;
+            this.bttn_hozzaadasPekseg.Click += new System.EventHandler(this.bttn_hozzaadasPekseg_Click);
             // 
-            // textBox4
+            // txtBx_pekseg
             // 
-            resources.ApplyResources(this.textBox4, "textBox4");
-            this.textBox4.Name = "textBox4";
+            resources.ApplyResources(this.txtBx_pekseg, "txtBx_pekseg");
+            this.txtBx_pekseg.ForeColor = System.Drawing.Color.Gray;
+            this.txtBx_pekseg.Name = "txtBx_pekseg";
+            this.txtBx_pekseg.Enter += new System.EventHandler(this.txtBx_pekseg_Enter);
+            this.txtBx_pekseg.Leave += new System.EventHandler(this.txtBx_pekseg_Leave);
             // 
             // grpBx_Pekaru
             // 
@@ -132,6 +140,7 @@
             this.lstBx_pekaru.FormattingEnabled = true;
             this.lstBx_pekaru.Name = "lstBx_pekaru";
             this.lstBx_pekaru.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_pekaru_MouseClick);
+            this.lstBx_pekaru.SelectedIndexChanged += new System.EventHandler(this.lstBx_pekaru_SelectedIndexChanged);
             this.lstBx_pekaru.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_pekaru_MouseDoubleClick);
             // 
             // bttn_hozzaadasPekaru
@@ -189,7 +198,7 @@
         private System.Windows.Forms.ListBox lstBx_peksegek;
         private System.Windows.Forms.Button bttn_plusz;
         private System.Windows.Forms.Button bttn_hozzaadasPekseg;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox txtBx_pekseg;
         private System.Windows.Forms.GroupBox grpBx_Pekaru;
         private System.Windows.Forms.TextBox txtBx_ar;
         private System.Windows.Forms.ListBox lstBx_pekaru;

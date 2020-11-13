@@ -9,8 +9,8 @@ namespace PeksegBeadando
     class Pekseg
     {
         public string Nev { get; set; }
-        public List<Pekaru> Termekek { get; }
-        public DateTime Alapitva { get; }
+        public List<Pekaru> Termekek { get; set; }
+        public DateTime Alapitva { get; set; }
 
         public override string ToString()
         {

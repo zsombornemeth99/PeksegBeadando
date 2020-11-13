@@ -127,10 +127,6 @@
   <data name="&gt;&gt;bttn_hozzaadasPekseg.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
-  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
-  <data name="bttn_plusz.TabIndex" type="System.Int32, mscorlib">
-    <value>8</value>
-  </data>
   <data name="&gt;&gt;txtBx_ar.Parent" xml:space="preserve">
     <value>grpBx_Pekaru</value>
   </data>
@@ -152,6 +148,9 @@
   <data name="&gt;&gt;lstBx_pekaru.Parent" xml:space="preserve">
     <value>grpBx_Pekaru</value>
   </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="&gt;&gt;grpBx_Pekaru.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
@@ -167,11 +166,12 @@
   <data name="lstBx_peksegek.Size" type="System.Drawing.Size, System.Drawing">
     <value>193, 228</value>
   </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="bttn_hozzaadasPekseg.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;bttn_plusz.ZOrder" xml:space="preserve">
-    <value>2</value>
+  <data name="&gt;&gt;lstBx_peksegTermekei.Parent" xml:space="preserve">
+    <value>grpBx_peksegek</value>
   </data>
   <data name="bttn_plusz.Location" type="System.Drawing.Point, System.Drawing">
     <value>516, 215</value>
@@ -182,20 +182,20 @@
   <data name="&gt;&gt;tabPage2.Type" xml:space="preserve">
     <value>System.Windows.Forms.TabPage, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="lstBx_peksegTermekei.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
   <data name="chckBx_laktoz.Text" xml:space="preserve">
     <value>Laktózmentes</value>
   </data>
   <data name="&gt;&gt;bttn_plusz.Parent" xml:space="preserve">
     <value>grpBx_peksegek</value>
   </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>675, 459</value>
+  </data>
   <data name="lstBx_peksegTermekei.ItemHeight" type="System.Int32, mscorlib">
     <value>16</value>
   </data>
-  <data name="&gt;&gt;chckBx_laktoz.Name" xml:space="preserve">
-    <value>chckBx_laktoz</value>
+  <data name="&gt;&gt;txtBx_pekseg.Parent" xml:space="preserve">
+    <value>grpBx_peksegek</value>
   </data>
   <data name="tabPage_Adatok.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -214,6 +214,9 @@
   </data>
   <data name="&gt;&gt;bttn_plusz.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="txtBx_pekseg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
   </data>
   <data name="&gt;&gt;lstBx_peksegek.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
@@ -245,17 +248,14 @@
   <data name="&gt;&gt;tabControl_Pekseg.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="&gt;&gt;grpBx_peksegek.Name" xml:space="preserve">
-    <value>grpBx_peksegek</value>
-  </data>
-  <data name="&gt;&gt;bttn_hozzaadasPekaru.Name" xml:space="preserve">
-    <value>bttn_hozzaadasPekaru</value>
-  </data>
   <data name="bttn_plusz.Text" xml:space="preserve">
     <value>+</value>
   </data>
   <data name="&gt;&gt;txtBx_nev.ZOrder" xml:space="preserve">
     <value>4</value>
+  </data>
+  <data name="bttn_hozzaadasPekseg.Text" xml:space="preserve">
+    <value>Hozzáadás</value>
   </data>
   <data name="&gt;&gt;txtBx_ar.ZOrder" xml:space="preserve">
     <value>0</value>
@@ -266,11 +266,14 @@
   <data name="&gt;&gt;txtBx_ar.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="txtBx_ar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
   <data name="chckBx_laktoz.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
-  <data name="bttn_hozzaadasPekaru.Text" xml:space="preserve">
-    <value>Hozzáadás</value>
+  <data name="bttn_hozzaadasPekaru.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
   </data>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
     <value>8, 16</value>
@@ -283,9 +286,6 @@
   </data>
   <data name="&gt;&gt;lstBx_peksegek.ZOrder" xml:space="preserve">
     <value>1</value>
-  </data>
-  <data name="lstBx_pekaru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 116</value>
   </data>
   <data name="&gt;&gt;bttn_plusz.Name" xml:space="preserve">
     <value>bttn_plusz</value>
@@ -305,11 +305,20 @@
   <data name="&gt;&gt;textBox4.Type" xml:space="preserve">
     <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="txtBx_pekseg.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;tabControl_Pekseg.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
   <data name="&gt;&gt;bttn_hozzaadasPekseg.Type" xml:space="preserve">
     <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;bttn_hozzaadasPekaru.Parent" xml:space="preserve">
     <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;txtBx_pekseg.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="&gt;&gt;chckBx_laktoz.ZOrder" xml:space="preserve">
     <value>3</value>
@@ -317,11 +326,14 @@
   <data name="&gt;&gt;tabPage_Adatok.Name" xml:space="preserve">
     <value>tabPage_Adatok</value>
   </data>
+  <data name="lstBx_peksegTermekei.Location" type="System.Drawing.Point, System.Drawing">
+    <value>469, 21</value>
+  </data>
   <data name="txtBx_nev.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 21</value>
   </data>
-  <data name="&gt;&gt;lstBx_pekaru.Name" xml:space="preserve">
-    <value>lstBx_pekaru</value>
+  <data name="chckBx_laktoz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
   </data>
   <data name="&gt;&gt;bttn_hozzaadasPekaru.ZOrder" xml:space="preserve">
     <value>2</value>
@@ -329,8 +341,8 @@
   <data name="tabPage_Adatok.Location" type="System.Drawing.Point, System.Drawing">
     <value>4, 25</value>
   </data>
-  <data name="&gt;&gt;tabPage_Adatok.ZOrder" xml:space="preserve">
-    <value>0</value>
+  <data name="&gt;&gt;grpBx_Pekaru.Parent" xml:space="preserve">
+    <value>tabPage_Adatok</value>
   </data>
   <data name="&gt;&gt;lstBx_peksegek.Parent" xml:space="preserve">
     <value>grpBx_peksegek</value>
@@ -341,10 +353,16 @@
   <data name="&gt;&gt;txtBx_nev.Parent" xml:space="preserve">
     <value>grpBx_Pekaru</value>
   </data>
+  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="&gt;&gt;grpBx_Pekaru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
   <data name="bttn_hozzaadasPekseg.Size" type="System.Drawing.Size, System.Drawing">
     <value>118, 34</value>
   </data>
-  <data name="bttn_hozzaadasPekseg.Text" xml:space="preserve">
+  <data name="bttn_hozzaadasPekaru.Text" xml:space="preserve">
     <value>Hozzáadás</value>
   </data>
   <data name="grpBx_peksegek.Text" xml:space="preserve">
@@ -372,20 +390,20 @@
   <data name="&gt;&gt;tabPage2.Name" xml:space="preserve">
     <value>tabPage2</value>
   </data>
-  <data name="&gt;&gt;tabControl_Pekseg.Parent" xml:space="preserve">
-    <value>$this</value>
+  <data name="&gt;&gt;bttn_plusz.ZOrder" xml:space="preserve">
+    <value>2</value>
   </data>
   <data name="&gt;&gt;lstBx_peksegTermekei.Type" xml:space="preserve">
     <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
+  <data name="&gt;&gt;txtBx_pekseg.Name" xml:space="preserve">
+    <value>txtBx_pekseg</value>
+  </data>
   <data name="textBox4.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
   </data>
-  <data name="&gt;&gt;$this.Name" xml:space="preserve">
-    <value>PeksegForm</value>
-  </data>
-  <data name="&gt;&gt;grpBx_Pekaru.Parent" xml:space="preserve">
-    <value>tabPage_Adatok</value>
+  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
   </data>
   <data name="tabPage_Adatok.Text" xml:space="preserve">
     <value>Adatok</value>
@@ -399,20 +417,23 @@
   <data name="txtBx_ar.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 49</value>
   </data>
+  <data name="bttn_hozzaadasPekseg.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
   <data name="grpBx_Pekaru.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="textBox4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
+  <data name="lstBx_pekaru.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 116</value>
   </data>
-  <data name="lstBx_peksegTermekei.Location" type="System.Drawing.Point, System.Drawing">
-    <value>469, 21</value>
+  <data name="bttn_plusz.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
   </data>
   <data name="lstBx_peksegTermekei.Size" type="System.Drawing.Size, System.Drawing">
     <value>178, 164</value>
   </data>
-  <data name="bttn_hozzaadasPekaru.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
+  <data name="&gt;&gt;grpBx_peksegek.Name" xml:space="preserve">
+    <value>grpBx_peksegek</value>
   </data>
   <data name="grpBx_Pekaru.Text" xml:space="preserve">
     <value>Pékáruk</value>
@@ -420,14 +441,11 @@
   <data name="txtBx_nev.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
   </data>
-  <data name="bttn_hozzaadasPekseg.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 49</value>
+  <data name="&gt;&gt;tabPage_Adatok.ZOrder" xml:space="preserve">
+    <value>0</value>
   </data>
   <data name="chckBx_laktoz.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
-  </data>
-  <data name="grpBx_peksegek.TabIndex" type="System.Int32, mscorlib">
-    <value>1</value>
   </data>
   <data name="&gt;&gt;tabPage_Adatok.Parent" xml:space="preserve">
     <value>tabControl_Pekseg</value>
@@ -438,8 +456,8 @@
   <data name="&gt;&gt;lstBx_peksegek.Name" xml:space="preserve">
     <value>lstBx_peksegek</value>
   </data>
-  <data name="&gt;&gt;grpBx_Pekaru.Type" xml:space="preserve">
-    <value>System.Windows.Forms.GroupBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;bttn_hozzaadasPekaru.Name" xml:space="preserve">
+    <value>bttn_hozzaadasPekaru</value>
   </data>
   <data name="tabControl_Pekseg.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -456,23 +474,23 @@
   <data name="tabPage2.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>3, 3, 3, 3</value>
   </data>
-  <data name="chckBx_laktoz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 21</value>
+  <data name="&gt;&gt;lstBx_pekaru.Name" xml:space="preserve">
+    <value>lstBx_pekaru</value>
   </data>
-  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>675, 459</value>
+  <data name="&gt;&gt;chckBx_laktoz.Name" xml:space="preserve">
+    <value>chckBx_laktoz</value>
   </data>
   <data name="chckBx_laktoz.Location" type="System.Drawing.Point, System.Drawing">
     <value>6, 77</value>
   </data>
-  <data name="&gt;&gt;$this.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>PeksegForm</value>
   </data>
-  <data name="tabPage_Adatok.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
-    <value>3, 3, 3, 3</value>
+  <data name="&gt;&gt;txtBx_pekseg.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
-  <data name="txtBx_ar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
+  <data name="lstBx_peksegTermekei.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
   </data>
   <data name="tabControl_Pekseg.Location" type="System.Drawing.Point, System.Drawing">
     <value>0, 0</value>
@@ -483,14 +501,14 @@
   <data name="&gt;&gt;chckBx_laktoz.Parent" xml:space="preserve">
     <value>grpBx_Pekaru</value>
   </data>
-  <data name="&gt;&gt;lstBx_peksegTermekei.Parent" xml:space="preserve">
-    <value>grpBx_peksegek</value>
+  <data name="grpBx_peksegek.TabIndex" type="System.Int32, mscorlib">
+    <value>1</value>
   </data>
   <data name="grpBx_Pekaru.Location" type="System.Drawing.Point, System.Drawing">
     <value>8, 6</value>
   </data>
-  <data name="textBox4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
+  <data name="tabPage_Adatok.Padding" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>3, 3, 3, 3</value>
   </data>
   <data name="&gt;&gt;grpBx_peksegek.Parent" xml:space="preserve">
     <value>tabPage_Adatok</value>

@@ -130,6 +130,13 @@
   <data name="bttn_hozzaadasPekseg.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
   </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="txtBx_pekseg.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="txtBx_pekseg.Text" xml:space="preserve">
+    <value>Írja be a pékség nevét..</value>
+  </data>
   <data name="txtBx_ar.MaxLength" type="System.Int32, mscorlib">
     <value>4</value>
   </data>
@@ -142,7 +149,6 @@
   <data name="txtBx_nev.Text" xml:space="preserve">
     <value>Írja be a pékáru nevét..</value>
   </data>
-  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="tabPage2.Size" type="System.Drawing.Size, System.Drawing">
     <value>667, 430</value>
   </data>

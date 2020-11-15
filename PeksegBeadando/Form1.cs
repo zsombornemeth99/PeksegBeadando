@@ -314,7 +314,7 @@ namespace PeksegBeadando
                     lbl_legolcsobb.Text = $"Legolcsóbb termék: {p.Termekek.OrderBy(x => x.Ar).First()}";
                     lbl_legdragabb.Text = $"Legdrágább termék: {p.Termekek.OrderByDescending(x => x.Ar).First()}";
                     lbl_laktoz.Text = $"Laktózmentes termékek: {p.Termekek.Count(l => l.Laktozmentes)} db," +
-                        $" {((double)p.Termekek.Count(l => l.Laktozmentes)) / p.Termekek.Count() * 100}%";
+                        $" {Math.Round(((double)p.Termekek.Count(l => l.Laktozmentes)) / p.Termekek.Count() * 100,2)}%";
                 }
                 else
                 {

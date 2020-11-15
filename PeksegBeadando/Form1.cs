@@ -88,7 +88,7 @@ namespace PeksegBeadando
                     txtBx_nev.Text = "Írja be a pékáru nevét..";
                     chckBx_laktoz.Checked = false;
                 }
-            }            
+            }
             else
             {
                 if (txtBx_ar.Text == "Írja be az árat.." || txtBx_nev.Text == "Írja be a pékáru nevét..")
@@ -239,6 +239,50 @@ namespace PeksegBeadando
                 txtBx_pekseg.ForeColor = Color.Gray;
                 txtBx_pekseg.Text = "Írja be a pékség nevét..";
                 lstBx_peksegTermekei.Items.Clear();
+            }
+        }
+
+        private void tabPage_stat_Enter(object sender, EventArgs e)
+        {
+            lstBx_stat.Items.Clear();
+            lbl_nev.Text = "";
+            lbl_alapitas.Text = "Alapítva: ";
+            lbl_pekaruk.Text = "Pékáruk: ";
+            lbl_avg.Text = "Átlagos ár: ";
+            lbl_legolcsobb.Text = "Legolcsóbb termék: ";
+            lbl_legdragabb.Text = "Legdrágább termék: ";
+            lbl_laktoz.Text = "Laktózmentes termékek: ";
+            foreach (var item in lstBx_peksegek.Items)
+            {
+                lstBx_stat.Items.Add(item);
+            }
+        }
+
+        private void lstBx_stat_MouseClick(object sender, MouseEventArgs e)
+        {
+            if (lstBx_stat.SelectedItem != null)
+            {
+                var p = (Pekseg)lstBx_stat.SelectedItem;
+                if (p.Termekek.Any())
+                {
+                    lbl_nev.Text = p.Nev;
+                    lbl_alapitas.Text = $"Alapítva: {p.Alapitva.ToShortDateString()}";
+                    lbl_pekaruk.Text = $"Pékáruk: {p.Termekek.Count()} db";
+                    int ossz = 0;
+                    foreach (var item in p.Termekek)
+                    {
+                        ossz += item.Ar;
+                    }
+                    lbl_avg.Text = $"Átlagos ár: {ossz / p.Termekek.Count()} Ft";
+                    lbl_legolcsobb.Text = $"Legolcsóbb termék: {p.Termekek.OrderBy(x => x.Ar).First()}";
+                    lbl_legdragabb.Text = $"Legdrágább termék: {p.Termekek.OrderByDescending(x => x.Ar).First()}";
+                    lbl_laktoz.Text = $"Laktózmentes termékek: {p.Termekek.Count(l => l.Laktozmentes)} db," +
+                        $" {((double)p.Termekek.Count(l => l.Laktozmentes)) / p.Termekek.Count() * 100}%";
+                }
+                else
+                {
+                    MessageBox.Show("Még nincs a pékséghez termék társítva!", "Hiba!");
+                }
             }
         }
     }

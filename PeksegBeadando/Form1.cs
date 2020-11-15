@@ -14,7 +14,7 @@ namespace PeksegBeadando
     {
         public PeksegForm()
         {
-            InitializeComponent();           
+            InitializeComponent();
         }
 
         private void txtBx_ar_KeyPress(object sender, KeyPressEventArgs e)
@@ -81,7 +81,19 @@ namespace PeksegBeadando
                         Nev = txtBx_nev.Text,
                         Laktozmentes = chckBx_laktoz.Checked ? true : false
                     };
-                    lstBx_pekaru.Items.Add(p);
+                    if (lstBx_pekaru.Items.Count != 0)
+                    {
+                        int i = 0;
+                        foreach (var item in lstBx_pekaru.Items)
+                        {
+                            var pk = (Pekaru)item;
+                            if (pk.Nev.Equals(p.Nev) && pk.Laktozmentes.Equals(p.Laktozmentes)) { i = 1; break; }
+                            else i = 0;
+                        }
+                        if (i == 0) lstBx_pekaru.Items.Add(p);
+                        else MessageBox.Show("Ezt a nevű pékárut már létrehozta!", "Hiba!");
+                    }
+                    else lstBx_pekaru.Items.Add(p);
                     txtBx_ar.ForeColor = Color.Gray;
                     txtBx_nev.ForeColor = Color.Gray;
                     txtBx_ar.Text = "Írja be az árat..";
@@ -103,7 +115,7 @@ namespace PeksegBeadando
                     p.Laktozmentes = chckBx_laktoz.Checked ? true : false;
                     var modosit = lstBx_pekaru.SelectedIndex;
                     lstBx_pekaru.Items.Remove(lstBx_pekaru.SelectedItem);
-                    lstBx_pekaru.Items.Insert(modosit,p);
+                    lstBx_pekaru.Items.Insert(modosit, p);
                     txtBx_ar.ForeColor = Color.Gray;
                     txtBx_nev.ForeColor = Color.Gray;
                     txtBx_ar.Text = "Írja be az árat..";
@@ -188,7 +200,19 @@ namespace PeksegBeadando
                     Termekek = new List<Pekaru>(),
                     Alapitva = DateTime.Now
                 };
-                lstBx_peksegek.Items.Add(p);
+                if (lstBx_peksegek.Items.Count != 0)
+                {
+                    int i = 0;
+                    foreach (var item in lstBx_peksegek.Items)
+                    {
+                        var pk = (Pekseg)item;
+                        if (pk.Nev.Equals(p.Nev)) { i = 1; break; }
+                        else i = 0;
+                    }
+                    if (i == 0) lstBx_peksegek.Items.Add(p);
+                    else MessageBox.Show("Ezt a nevű pékséget már létrehozta!", "Hiba!");
+                }
+                else lstBx_peksegek.Items.Add(p);
                 txtBx_pekseg.ForeColor = Color.Gray;
                 txtBx_pekseg.Text = "Írja be a pékség nevét..";
             }
@@ -219,7 +243,10 @@ namespace PeksegBeadando
             if (lstBx_pekaru.SelectedItem != null && lstBx_peksegek.SelectedItem != null)
             {
                 var p = (Pekseg)lstBx_peksegek.SelectedItem;
-                p.Termekek.Add((Pekaru)lstBx_pekaru.SelectedItem);
+                if (!p.Termekek.Contains(lstBx_pekaru.SelectedItem))
+                    p.Termekek.Add((Pekaru)lstBx_pekaru.SelectedItem);
+                else
+                    MessageBox.Show("Ezt a pékárút már hozzáadta a pékséghez!", "Hiba!");
                 lstBx_peksegTermekei.Items.Clear();
                 foreach (var item in p.Termekek)
                 {

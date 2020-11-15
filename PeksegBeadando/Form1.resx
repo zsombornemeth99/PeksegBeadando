@@ -260,15 +260,6 @@
   <data name="&gt;&gt;grpBx_peksegek.ZOrder" xml:space="preserve">
     <value>0</value>
   </data>
-  <data name="txtBx_ar.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 49</value>
-  </data>
-  <data name="txtBx_ar.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="txtBx_ar.TabIndex" type="System.Int32, mscorlib">
-    <value>5</value>
-  </data>
   <data name="&gt;&gt;txtBx_ar.Name" xml:space="preserve">
     <value>txtBx_ar</value>
   </data>
@@ -280,18 +271,6 @@
   </data>
   <data name="&gt;&gt;txtBx_ar.ZOrder" xml:space="preserve">
     <value>0</value>
-  </data>
-  <data name="lstBx_pekaru.ItemHeight" type="System.Int32, mscorlib">
-    <value>16</value>
-  </data>
-  <data name="lstBx_pekaru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>270, 21</value>
-  </data>
-  <data name="lstBx_pekaru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>377, 116</value>
-  </data>
-  <data name="lstBx_pekaru.TabIndex" type="System.Int32, mscorlib">
-    <value>4</value>
   </data>
   <data name="&gt;&gt;lstBx_pekaru.Name" xml:space="preserve">
     <value>lstBx_pekaru</value>
@@ -305,18 +284,6 @@
   <data name="&gt;&gt;lstBx_pekaru.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
-  <data name="bttn_hozzaadasPekaru.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 104</value>
-  </data>
-  <data name="bttn_hozzaadasPekaru.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 34</value>
-  </data>
-  <data name="bttn_hozzaadasPekaru.TabIndex" type="System.Int32, mscorlib">
-    <value>3</value>
-  </data>
-  <data name="bttn_hozzaadasPekaru.Text" xml:space="preserve">
-    <value>Hozzáadás</value>
-  </data>
   <data name="&gt;&gt;bttn_hozzaadasPekaru.Name" xml:space="preserve">
     <value>bttn_hozzaadasPekaru</value>
   </data>
@@ -329,21 +296,6 @@
   <data name="&gt;&gt;bttn_hozzaadasPekaru.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <data name="chckBx_laktoz.AutoSize" type="System.Boolean, mscorlib">
-    <value>True</value>
-  </data>
-  <data name="chckBx_laktoz.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 77</value>
-  </data>
-  <data name="chckBx_laktoz.Size" type="System.Drawing.Size, System.Drawing">
-    <value>118, 21</value>
-  </data>
-  <data name="chckBx_laktoz.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="chckBx_laktoz.Text" xml:space="preserve">
-    <value>Laktózmentes</value>
-  </data>
   <data name="&gt;&gt;chckBx_laktoz.Name" xml:space="preserve">
     <value>chckBx_laktoz</value>
   </data>
@@ -355,15 +307,6 @@
   </data>
   <data name="&gt;&gt;chckBx_laktoz.ZOrder" xml:space="preserve">
     <value>3</value>
-  </data>
-  <data name="txtBx_nev.Location" type="System.Drawing.Point, System.Drawing">
-    <value>6, 21</value>
-  </data>
-  <data name="txtBx_nev.Size" type="System.Drawing.Size, System.Drawing">
-    <value>170, 22</value>
-  </data>
-  <data name="txtBx_nev.TabIndex" type="System.Int32, mscorlib">
-    <value>0</value>
   </data>
   <data name="&gt;&gt;txtBx_nev.Name" xml:space="preserve">
     <value>txtBx_nev</value>
@@ -572,6 +515,123 @@
   </data>
   <data name="&gt;&gt;tabControl_Pekseg.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <data name="txtBx_ar.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 49</value>
+  </data>
+  <data name="txtBx_ar.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="txtBx_ar.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="&gt;&gt;txtBx_ar.Name" xml:space="preserve">
+    <value>txtBx_ar</value>
+  </data>
+  <data name="&gt;&gt;txtBx_ar.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBx_ar.Parent" xml:space="preserve">
+    <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;txtBx_ar.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="lstBx_pekaru.ItemHeight" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="lstBx_pekaru.Location" type="System.Drawing.Point, System.Drawing">
+    <value>270, 21</value>
+  </data>
+  <data name="lstBx_pekaru.Size" type="System.Drawing.Size, System.Drawing">
+    <value>377, 116</value>
+  </data>
+  <data name="lstBx_pekaru.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="&gt;&gt;lstBx_pekaru.Name" xml:space="preserve">
+    <value>lstBx_pekaru</value>
+  </data>
+  <data name="&gt;&gt;lstBx_pekaru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.ListBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;lstBx_pekaru.Parent" xml:space="preserve">
+    <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;lstBx_pekaru.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="bttn_hozzaadasPekaru.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 104</value>
+  </data>
+  <data name="bttn_hozzaadasPekaru.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 34</value>
+  </data>
+  <data name="bttn_hozzaadasPekaru.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="bttn_hozzaadasPekaru.Text" xml:space="preserve">
+    <value>Hozzáadás</value>
+  </data>
+  <data name="&gt;&gt;bttn_hozzaadasPekaru.Name" xml:space="preserve">
+    <value>bttn_hozzaadasPekaru</value>
+  </data>
+  <data name="&gt;&gt;bttn_hozzaadasPekaru.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;bttn_hozzaadasPekaru.Parent" xml:space="preserve">
+    <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;bttn_hozzaadasPekaru.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="chckBx_laktoz.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="chckBx_laktoz.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 77</value>
+  </data>
+  <data name="chckBx_laktoz.Size" type="System.Drawing.Size, System.Drawing">
+    <value>118, 21</value>
+  </data>
+  <data name="chckBx_laktoz.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="chckBx_laktoz.Text" xml:space="preserve">
+    <value>Laktózmentes</value>
+  </data>
+  <data name="&gt;&gt;chckBx_laktoz.Name" xml:space="preserve">
+    <value>chckBx_laktoz</value>
+  </data>
+  <data name="&gt;&gt;chckBx_laktoz.Type" xml:space="preserve">
+    <value>System.Windows.Forms.CheckBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;chckBx_laktoz.Parent" xml:space="preserve">
+    <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;chckBx_laktoz.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="txtBx_nev.Location" type="System.Drawing.Point, System.Drawing">
+    <value>6, 21</value>
+  </data>
+  <data name="txtBx_nev.Size" type="System.Drawing.Size, System.Drawing">
+    <value>170, 22</value>
+  </data>
+  <data name="txtBx_nev.TabIndex" type="System.Int32, mscorlib">
+    <value>0</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Name" xml:space="preserve">
+    <value>txtBx_nev</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Type" xml:space="preserve">
+    <value>System.Windows.Forms.TextBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.Parent" xml:space="preserve">
+    <value>grpBx_Pekaru</value>
+  </data>
+  <data name="&gt;&gt;txtBx_nev.ZOrder" xml:space="preserve">
+    <value>4</value>
   </data>
   <data name="lbl_laktoz.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>

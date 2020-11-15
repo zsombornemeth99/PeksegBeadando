@@ -97,7 +97,6 @@
             this.lstBx_peksegek.FormattingEnabled = true;
             resources.ApplyResources(this.lstBx_peksegek, "lstBx_peksegek");
             this.lstBx_peksegek.Name = "lstBx_peksegek";
-            this.lstBx_peksegek.SelectionMode = System.Windows.Forms.SelectionMode.MultiSimple;
             this.lstBx_peksegek.MouseClick += new System.Windows.Forms.MouseEventHandler(this.lstBx_peksegek_MouseClick);
             this.lstBx_peksegek.SelectedIndexChanged += new System.EventHandler(this.lstBx_peksegek_SelectedIndexChanged);
             // 

@@ -136,6 +136,14 @@ namespace PeksegBeadando
                 var result = MessageBox.Show("Biztos törli a kijelölt elemet?", "Törlés", MessageBoxButtons.YesNo);
                 if (result == DialogResult.Yes)
                 {
+                    foreach (var item in lstBx_peksegek.Items)
+                    {
+                        var pekseg = (Pekseg)item;
+                        if (pekseg.Termekek.Contains(lstBx_pekaru.SelectedItem))
+                        {
+                            pekseg.Termekek.Remove((Pekaru)lstBx_pekaru.SelectedItem);
+                        }
+                    }
                     lstBx_pekaru.Items.Remove(lstBx_pekaru.SelectedItem);
                     txtBx_ar.ForeColor = Color.Gray;
                     txtBx_nev.ForeColor = Color.Gray;

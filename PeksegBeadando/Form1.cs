@@ -14,7 +14,7 @@ namespace PeksegBeadando
     {
         public PeksegForm()
         {
-            InitializeComponent();
+            InitializeComponent();           
         }
 
         private void txtBx_ar_KeyPress(object sender, KeyPressEventArgs e)
@@ -101,7 +101,9 @@ namespace PeksegBeadando
                     p.Nev = txtBx_nev.Text;
                     p.Ar = int.Parse(txtBx_ar.Text);
                     p.Laktozmentes = chckBx_laktoz.Checked ? true : false;
-                    lstBx_pekaru.Refresh();
+                    var modosit = lstBx_pekaru.SelectedIndex;
+                    lstBx_pekaru.Items.Remove(lstBx_pekaru.SelectedItem);
+                    lstBx_pekaru.Items.Insert(modosit,p);
                     txtBx_ar.ForeColor = Color.Gray;
                     txtBx_nev.ForeColor = Color.Gray;
                     txtBx_ar.Text = "Írja be az árat..";
